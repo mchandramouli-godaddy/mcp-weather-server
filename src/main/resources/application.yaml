@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: weather-mcp-server
+  ai:
+    mcp:
+      server:
+        name: weather-mcp-server
+        stdio: false
+        version: 1.0.0
+        type: ASYNC
+        sse-message-endpoint: /mcp/messages
+
+server:
+  port: 8085
+
+logging:
+  level:
+    com.godaddy.examples.mcp.weather: DEBUG
+    org.springframework.ai: DEBUG
